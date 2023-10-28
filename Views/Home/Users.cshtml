@@ -1,0 +1,16 @@
+@{
+    ViewData["Title"] = "Users";
+}
+
+<div>
+    @model List<String>
+    <h1 class="text-center">Here are some Users!</h1>
+    <div class="col-2">
+        <ul style="list-style: none; border: 1px solid #000;" class="list-group">
+            @foreach (string user in Model)
+            {
+                <li class="list-group-item">@user</li>
+            }
+        </ul>
+    </div>
+</div>
